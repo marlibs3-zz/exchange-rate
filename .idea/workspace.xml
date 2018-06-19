@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c75e8f0e-068b-4bd0-ac3a-1362793e3686" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ExchangeRate.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/ExchangeRate.gemspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/errors/DateNotFoundError.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/errors/UnknownCurrencyError.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/errors/UnknownCurrencyError.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ExchangeRate_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/ExchangeRate_test.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,44 +17,56 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ExchangeRate@ExchangeRate.rcov" NAME="ExchangeRate Coverage Results" MODIFIED="1529401310890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="ExchangeRate" />
-    <SUITE FILE_PATH="coverage/ExchangeRate@Run_test__ExchangeRate_test___ExchangeRate.rcov" NAME="Run test 'ExchangeRate_test': ExchangeRate Coverage Results" MODIFIED="1529412857114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ExchangeRate" />
+    <SUITE FILE_PATH="coverage/ExchangeRate@Run_test__ExchangeRate_test___ExchangeRate.rcov" NAME="Run test 'ExchangeRate_test': ExchangeRate Coverage Results" MODIFIED="1529417754045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ExchangeRate" />
     <SUITE FILE_PATH="coverage/ExchangeRate@RateParser.rcov" NAME="RateParser Coverage Results" MODIFIED="1529367654471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" MODULE_NAME="ExchangeRate" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Rakefile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rakefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LICENSE.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile.lock" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="ExchangeRate.gemspec" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ExchangeRate.gemspec">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="11" column="168" selection-start-line="11" selection-start-column="168" selection-end-line="11" selection-end-column="168" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.47540984">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="ExchangeRate.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UnknownCurrencyError.rb" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lib/errors/UnknownCurrencyError.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/minitest-5.11.3/lib/minitest/test.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="334">
+                  <caret line="97" selection-start-line="97" selection-end-line="97" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="ExchangeRate_test.rb" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/ExchangeRate_test.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="499">
+                  <caret line="29" column="109" lean-forward="true" selection-start-line="29" selection-start-column="109" selection-end-line="29" selection-end-column="109" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -71,12 +85,14 @@
         <option value="$PROJECT_DIR$/bin/console" />
         <option value="$PROJECT_DIR$/lib/ExchangeRate.rb" />
         <option value="$PROJECT_DIR$/test/test_helper.rb" />
-        <option value="$PROJECT_DIR$/test/ExchangeRate_test.rb" />
-        <option value="$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/LICENSE.txt" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/ExchangeRate.gemspec" />
+        <option value="$PROJECT_DIR$/test/ExchangeRate_test.rb" />
+        <option value="$PROJECT_DIR$/lib/errors/DateNotFoundError.rb" />
+        <option value="$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb" />
+        <option value="$PROJECT_DIR$/lib/errors/UnknownCurrencyError.rb" />
       </list>
     </option>
   </component>
@@ -154,6 +170,9 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/errors" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/ExchangeRate" />
       <recent name="$PROJECT_DIR$/lib" />
@@ -261,44 +280,44 @@
       <updated>1529362098012</updated>
       <workItem from="1529362099732" duration="6348000" />
       <workItem from="1529398159405" duration="6328000" />
-      <workItem from="1529412224713" duration="1432000" />
+      <workItem from="1529412224713" duration="4300000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 47m 52s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 15h 00m 29s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 47m 57s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 15h 04m 02s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 48m 41s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 15h 05m 38s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 50m 06s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 15h 06m 00s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 50m 31s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 15h 06m 10s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 51m 00s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 15h 09m 39s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 51m 32s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 15h 12m 15s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 53m 44s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 15h 12m 25s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 54m 04s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 15h 14m 39s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 54m 18s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 15h 14m 51s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14108000" />
+    <option name="totallyTimeSpent" value="16976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -333,7 +352,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -386,20 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/minitest-5.11.3/lib/minitest/test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/errors/UnknownCurrencyError.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/setup">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -434,20 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ExchangeRate_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -455,13 +446,6 @@
             <caret line="17" column="110" lean-forward="true" selection-start-line="17" selection-start-column="110" selection-end-line="17" selection-end-column="110" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -482,10 +466,66 @@
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/CODE_OF_CONDUCT.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ExchangeRate.gemspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="11" column="168" selection-start-line="11" selection-start-column="168" selection-end-line="11" selection-end-column="168" />
+        <state relative-caret-position="116">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/minitest-5.11.3/lib/minitest/test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ExchangeRate_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="29" column="109" lean-forward="true" selection-start-line="29" selection-start-column="109" selection-end-line="29" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/errors/DateNotFoundError.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="121" lean-forward="true" selection-start-line="7" selection-start-column="121" selection-end-line="7" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/errors/UnknownCurrencyError.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

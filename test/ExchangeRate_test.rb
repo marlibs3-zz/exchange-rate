@@ -2,6 +2,7 @@ require "test_helper"
 require_relative "../lib/ExchangeRate/ExchangeRate"
 require_relative "../data/RateParser"
 require_relative "../lib/errors/UnknownCurrencyError"
+require_relative "../lib/errors/DateNotFoundError"
 
 
 class ExchangeRateTest < Minitest::Test
@@ -17,7 +18,8 @@ class ExchangeRateTest < Minitest::Test
   end
 
   def test_can_get_rates_for_rate__invalid_date
-    assert_equal([], ExchangeRate.get_rates_for_date(@all_dates_array, Date.new(2019, 6, 18)))
+    error = assert_raises(DateNotFoundError) {ExchangeRate.get_rates_for_date(@all_dates_array, Date.new(2019, 6, 18))}
+    assert_equal("There is no exchange rate data for 2019-06-18. Please ensure the date is a weekday within the last 90 days.", error.message)
   end
 
   def test_can_get_currency_rate__valid_currency
