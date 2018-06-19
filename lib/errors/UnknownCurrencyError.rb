@@ -1,0 +1,2 @@
+class UnknownCurrencyError < StandardError
+end
