@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Marta Beveridge"]
   spec.email         = ["marta@beveridge.uk"]
 
-  spec.summary       = %q{A Ruby gem for currency conversion. Accepts input of date and two currencies and returns the exchange rate.}
+  spec.summary       = %q{A Ruby gem for currency conversion. Accepts input of date and two currencies and returns the exchange rate. Gem made as part of a coding test.}
   spec.description   = %q{This gem works with the European Central Bank up to date foreign exchange reference rates. It takes an input of the date, i.e. today and two currencies in the typical three-character abbreviations i.e. USD, GBP. This project was built as a coding test.}
   spec.homepage      = "https://github.com/martabeveridge/exchange-rate"
   spec.license       = "MIT"

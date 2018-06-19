@@ -8,9 +8,10 @@ You can install this gem by running:
 
     $ gem install ExchangeRate
 
-## Usage
+## Data
 
-TODO: Write usage instructions here.
+The data source for this currency converter is the [XML file](http://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml) outputted every weekday by the European Central Bank (ECB). If a weekend date is inputted, the latest available date will be used.
+
 
 ## License
 
