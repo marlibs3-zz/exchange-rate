@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{A Ruby gem for currency conversion. Accepts input of date and two currencies and returns the exchange rate.}
   spec.description   = %q{This gem works with the European Central Bank up to date foreign exchange reference rates. It takes an input of the date, i.e. today and two currencies in the typical three-character abbreviations i.e. USD, GBP. This project was built as a coding test.}
-  spec.homepage      = "https://github.com/martabeveridge/CurrencyCo"
+  spec.homepage      = "https://github.com/martabeveridge/exchange-rate"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
