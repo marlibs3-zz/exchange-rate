@@ -1,6 +1,5 @@
 require_relative "../../data/RateParser"
 require_relative "../errors/UnknownCurrencyError"
-require 'pp'
 
 module ExchangeRate
 
@@ -15,7 +14,7 @@ module ExchangeRate
       currency_hash = all_rates_per_date.select{ |item| item["currency"] == currency }
       return currency_hash[0]["rate"].to_f
     rescue NoMethodError
-      raise UnknownCurrencyError.new(currency)
+      raise UnknownCurrencyError.new(currency + " is not a valid currency. Please enter a three-letter currency code.")
     end
  end
 
@@ -29,7 +28,7 @@ module ExchangeRate
     destination_currency_multiplier = destination_currency_rate
     exchange_rate = (origin_currency_multiplier * destination_currency_multiplier).floor(4)
 
-    return "The exchange rate on " + date.to_s + " between " + origin_currency + " and " + destination_currency + " is: " + exchange_rate.to_s
+    return exchange_rate
   end
 
 end

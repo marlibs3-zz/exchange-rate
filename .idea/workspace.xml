@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c75e8f0e-068b-4bd0-ac3a-1362793e3686" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ExchangeRate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ExchangeRate.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ExchangeRate.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/ExchangeRate_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/ExchangeRate_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +16,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ExchangeRate@ExchangeRate.rcov" NAME="ExchangeRate Coverage Results" MODIFIED="1529401310890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="ExchangeRate" />
-    <SUITE FILE_PATH="coverage/ExchangeRate@Run_test__ExchangeRate_test___ExchangeRate.rcov" NAME="Run test 'ExchangeRate_test': ExchangeRate Coverage Results" MODIFIED="1529405385572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ExchangeRate" />
+    <SUITE FILE_PATH="coverage/ExchangeRate@Run_test__ExchangeRate_test___ExchangeRate.rcov" NAME="Run test 'ExchangeRate_test': ExchangeRate Coverage Results" MODIFIED="1529412857114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ExchangeRate" />
     <SUITE FILE_PATH="coverage/ExchangeRate@RateParser.rcov" NAME="RateParser Coverage Results" MODIFIED="1529367654471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" MODULE_NAME="ExchangeRate" />
   </component>
   <component name="FileEditorManager">
@@ -27,7 +27,7 @@
             <entry file="file://$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
-                  <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+                  <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
                 </state>
               </provider>
             </entry>
@@ -35,12 +35,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="ExchangeRate_test.rb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/ExchangeRate_test.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+                <state relative-caret-position="559">
+                  <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -52,6 +52,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>xml_file</find>
+      <find>15.6275</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -63,8 +64,10 @@
         <option value="$PROJECT_DIR$/data/RateParser.rb" />
         <option value="$PROJECT_DIR$/ExchangeRate.gemspec" />
         <option value="$PROJECT_DIR$/lib/UnknownCurrencyError" />
-        <option value="$PROJECT_DIR$/test/ExchangeRate_test.rb" />
+        <option value="$PROJECT_DIR$/bin/console" />
         <option value="$PROJECT_DIR$/lib/ExchangeRate.rb" />
+        <option value="$PROJECT_DIR$/test/test_helper.rb" />
+        <option value="$PROJECT_DIR$/test/ExchangeRate_test.rb" />
         <option value="$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb" />
       </list>
     </option>
@@ -90,7 +93,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,6 +136,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -145,6 +148,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/ExchangeRate" />
+      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/lib/errors" />
     </key>
   </component>
@@ -248,60 +252,60 @@
       <option name="presentableId" value="Default" />
       <updated>1529362098012</updated>
       <workItem from="1529362099732" duration="6348000" />
-      <workItem from="1529398159405" duration="5940000" />
+      <workItem from="1529398159405" duration="6328000" />
+      <workItem from="1529412224713" duration="648000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 11h 36m 22s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 47m 52s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 11h 39m 30s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 47m 57s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 11h 40m 00s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 48m 41s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 11h 42m 41s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 50m 06s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 11h 43m 42s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 50m 31s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 11h 44m 25s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 51m 00s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 11h 49m 04s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 51m 32s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 11h 49m 18s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 53m 44s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 11h 49m 37s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 54m 04s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 11h 49m 45s.xml">
+    <history-entry file="Run_test_'ExchangeRate_test'__ExchangeRate - 2018.06.19 at 13h 54m 18s.xml">
       <configuration name="Run test 'ExchangeRate_test': ExchangeRate" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12288000" />
+    <option name="totallyTimeSpent" value="13324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17395833" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36759582" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122395836" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36759582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39982578" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -310,6 +314,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +329,27 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ExchangeRate_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="10" column="1306" lean-forward="true" selection-start-line="10" selection-start-column="1306" selection-end-line="10" selection-end-column="1306" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/RateParser.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -373,24 +399,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/setup">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/console">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ExchangeRate/version.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/RateParser.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.4.1/lib/ruby/site_ruby/2.4.0/rubygems/core_ext/kernel_require.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ExchangeRate_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ExchangeRate/ExchangeRate.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ExchangeRate_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
         </state>
       </provider>
     </entry>

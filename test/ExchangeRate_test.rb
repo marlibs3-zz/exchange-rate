@@ -25,8 +25,8 @@ class ExchangeRateTest < Minitest::Test
   end
 
   def test_can_get_currency_rate__invalid_currency
-    error = assert_raises(UnknownCurrencyError) {ExchangeRate.get_currency_rate(@all_rates_per_date, "WOO")}
-    assert_equal("WOO", error.message)
+    error = assert_raises(UnknownCurrencyError) {ExchangeRate.get_currency_rate(@all_rates_per_date, "TEST")}
+    assert_equal("TEST is not a valid currency. Please enter a three-letter currency code.", error.message)
   end
 
 end
