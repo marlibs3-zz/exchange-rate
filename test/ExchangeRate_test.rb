@@ -1,9 +1,9 @@
 require "test_helper"
-require_relative "../lib/ExchangeRate/ExchangeRate"
+
 require_relative "../data/RateParser"
+require_relative "../lib/ExchangeRate/ExchangeRate"
 require_relative "../lib/errors/UnknownCurrencyError"
 require_relative "../lib/errors/DateNotFoundError"
-
 
 class ExchangeRateTest < Minitest::Test
 
@@ -17,7 +17,17 @@ class ExchangeRateTest < Minitest::Test
     assert_equal(@one_date_array, ExchangeRate.get_rates_for_date(@all_dates_array, Date.new(2018, 6, 18)))
   end
 
-  def test_can_get_rates_for_rate__invalid_date
+  def test_can_get_rates_for_rate__invalid_date___past
+    error = assert_raises(DateNotFoundError) {ExchangeRate.get_rates_for_date(@all_dates_array, Date.new(2017, 6, 18))}
+    assert_equal("There is no exchange rate data for 2017-06-18. Please ensure the date is a weekday within the last 90 days.", error.message)
+  end
+
+  def test_can_get_rates_for_rate__invalid_date___weekend
+    error = assert_raises(DateNotFoundError) {ExchangeRate.get_rates_for_date(@all_dates_array, Date.new(2018, 6, 17))}
+    assert_equal("There is no exchange rate data for 2018-06-17. Please ensure the date is a weekday within the last 90 days.", error.message)
+  end
+
+  def test_can_get_rates_for_rate__invalid_date___future
     error = assert_raises(DateNotFoundError) {ExchangeRate.get_rates_for_date(@all_dates_array, Date.new(2019, 6, 18))}
     assert_equal("There is no exchange rate data for 2019-06-18. Please ensure the date is a weekday within the last 90 days.", error.message)
   end
@@ -26,9 +36,14 @@ class ExchangeRateTest < Minitest::Test
     assert_equal(0.87655, ExchangeRate.get_currency_rate(@all_rates_per_date, "GBP"))
   end
 
-  def test_can_get_currency_rate__invalid_currency
+  def test_can_get_currency_rate__invalid_currency___string
     error = assert_raises(UnknownCurrencyError) {ExchangeRate.get_currency_rate(@all_rates_per_date, "TEST")}
     assert_equal("TEST is not a valid currency. Please enter a three-letter currency code.", error.message)
+  end
+
+  def test_can_get_currency_rate__invalid_currency___int
+    error = assert_raises(UnknownCurrencyError) {ExchangeRate.get_currency_rate(@all_rates_per_date, "123")}
+    assert_equal("123 is not a valid currency. Please enter a three-letter currency code.", error.message)
   end
 
 end
