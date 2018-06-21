@@ -1,5 +1,6 @@
-require_relative "../../data/RateParser"
+require_relative "../../data/ecb_xml_handler"
 require_relative "../errors/UnknownCurrencyError"
+require_relative "../errors/DateNotFoundError"
 
 module ExchangeRate
 
@@ -25,7 +26,7 @@ module ExchangeRate
   end
 
   def self.at(date, origin_currency, destination_currency)
-    all_dates_array = RatesParser.parse
+    all_dates_array = ECBXMLHandler.parse
 
     all_rates_for_date = get_rates_for_date(all_dates_array, date)
 
