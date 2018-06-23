@@ -1,12 +1,12 @@
 require_relative "../../data/ecb_xml_handler"
-require_relative "../errors/UnknownCurrencyError"
-require_relative "../errors/DateNotFoundError"
+require_relative "../errors/unknown_currency_error"
+require_relative "../errors/date_not_found_error"
 
 module ExchangeRate
 
   def self.get_rates_for_date(all_dates_array, selected_date)
     selected_date_rate_array = all_dates_array.select{ |item| item["time"] == selected_date.strftime("%F") }
-    if selected_date_rate_array.length == 0
+    if selected_date_rate_array.empty?
       raise DateNotFoundError.new(selected_date.to_s)
     else
       return selected_date_rate_array
@@ -36,7 +36,8 @@ module ExchangeRate
     orig_currency_multiplier = (1 / origin_currency_rate)
     dest_currency_multiplier = destination_currency_rate
 
-    exchange_rate = (orig_currency_multiplier * dest_currency_multiplier).floor(4)
+    exchange_rate = (orig_currency_multiplier * dest_currency_multiplier)
+    exchange_rate = exchange_rate.floor(4)
     return exchange_rate
 
   end

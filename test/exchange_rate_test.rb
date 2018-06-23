@@ -1,9 +1,9 @@
 require "test_helper"
 
 require_relative "../data/ecb_xml_handler"
-require_relative "../lib/ExchangeRate/ExchangeRate"
-require_relative "../lib/errors/UnknownCurrencyError"
-require_relative "../lib/errors/DateNotFoundError"
+require_relative "../lib/exchange_rate/exchange_rate"
+require_relative "../lib/errors/unknown_currency_error"
+require_relative "../lib/errors/date_not_found_error"
 
 class ExchangeRateTest < Minitest::Test
 

@@ -17,8 +17,15 @@ class ECBXMLHandler
   end
 
   def self.parse
-    hash = XmlSimple.xml_in(XML_FILE)
-    return hash["Cube"][0]["Cube"]
+    if File.file?(XML_FILE)
+      hash = XmlSimple.xml_in(XML_FILE)
+      return hash["Cube"][0]["Cube"]
+    else
+      fetch
+      parse
+    end
   end
 
 end
+
+ECBXMLHandler.parse
